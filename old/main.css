@@ -1,0 +1,137 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #089C00;
+  transition: 0.3s ease-in-out;
+}
+
+footer {
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  font-size: 30px;
+  height: 100px;
+  justify-content: center;
+}
+
+
+.contacts {
+  align-items: center;
+  background-color: #2D2E2E;
+  color: #fff;
+  display: flex;
+  font-size: 30px;
+  height: 300px;
+  justify-content: center;
+}
+
+.contacts p {
+  margin: 0;
+}
+
+.container .top {
+  display: flex;
+  background-color: #272927;
+}
+
+.container .top h1{
+  color: #DEE0DE;
+  margin: 0;
+  padding: 10px 10px;
+}
+
+.top a {
+  align-self: center;
+}
+
+.img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img {
+  background-image: url("assets/rubik-cube.jpg");
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.nav li {
+  color: #000;
+  border-bottom: dashed #000 1px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.projects {
+  color: black;
+}
+
+.projects ul {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.projects li {
+  list-style-type: none;
+  margin: 0 30px;
+  max-width: 290px;
+  text-align: center;
+}
+
+.projects li p, .darken {
+  background-color: #062904;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.projects li img{
+  max-width: 100%;
+}
+
+.skills {
+  background-color: #1B1C1C;
+  height: 300px;
+}
+
+.skills ul {
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.skills li {
+  height: 100px;
+  list-style-type: none;
+  width: 100px;
+}
+
+.skills li img {
+  height: 100px;
+  width: 100px;
+}

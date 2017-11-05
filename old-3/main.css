@@ -1,0 +1,433 @@
+html, body {
+  background-color: #4a8286;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.container .left, .container .right  {
+  margin-top: 4%;
+  height: 500px;
+  width: 40%;
+}
+
+.container .left .logo-start {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .left p.margin {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.container .left .logo-start img {
+  height: 50px;
+  margin: 10px;
+  width: 50px;
+}
+
+.container .left .title {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.container .left .title div {
+  align-items: center;
+  display: flex;
+}
+
+.container .left .title .image {
+  background-image: url("assets/iphone.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 25% 50%;
+  justify-content: flex-end;
+  width: 80%;
+  height: 100%;
+}
+
+.container .left .title .image h1 {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+
+.container .left .title .image h1 span {
+  display: block;
+  font-size: 40px;
+}
+
+.container .left .title div p {
+  margin: 10px 10px 10px 0;
+}
+
+.container .left .title-logo span {
+  display: block;
+  font-size: 15px;
+}
+
+.container .right img {
+  height: 25px;
+  width: 25px;
+}
+
+.container .right p, .container-responsive .res-desc div p  {
+  font-size: 14px;
+}
+
+.container .right p span, .container-responsive .res-desc div p span {
+  font-weight: 600;
+}
+
+.container .right .contact {
+  align-items: center;
+  display: flex;
+}
+
+.container .right .contact p {
+  margin: 15px;
+}
+
+.container .right .contact p a, .section-load p a, footer p a {
+  color: #222;
+  text-decoration: none;
+}
+
+.container .right .arrow {
+  background-color: #222;
+  bottom: 10px;
+  height: 60%;
+  position: absolute;
+  width: 1px;
+}
+
+.container .right .next {
+  align-items: center;
+  height: 83%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 10px;
+}
+
+.container .right .next div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container .right .next p {
+  cursor: pointer;
+  font-size: 12px;
+  margin: 0;
+}
+
+.container .right .next p a {
+  color: #222;
+  text-decoration: none;
+}
+
+.work {
+  background-color: #4a8286;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 0.6s ease;
+}
+
+.work .logo-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.work .logo-copy div {
+  align-items: center;
+  display: flex;
+}
+
+.work .logo-copy div span {
+  display: block;
+}
+
+.work .logo-copy div p {
+  text-align: center;
+}
+
+.work .logo-copy div .space {
+  margin: 16px 10px;
+}
+
+.work .logo-copy img {
+  height: 50px;
+  width: 50px;
+}
+
+.work .logo-copy .copy {
+  font-size: 10px;
+  margin: 0;
+}
+
+.work .port-work {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.work .port-work .back-home span {
+  background-color: #000;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 30%;
+  width: 1px;
+}
+
+.work .port-work .back-home p {
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.work .port-work .display-work {
+  margin-top: 20%;
+}
+
+.work .port-work .display-work .logo-active {
+  display: flex;
+}
+
+.work .port-work .work-link {
+  margin-top: 20%;
+  text-align: center;
+}
+
+.work .port-work .work-link a, .container-responsive .res-link a {
+  color: #000;
+  text-decoration: none;
+}
+
+.work .port-work .work-link div, .container-responsive .res-link {
+  -ms-animation: push 3s linear 0s;
+  -webkit-animation: push 3s linear 0s;
+  animation: push 3s linear 0s;
+  border: 1px solid #000;
+  border-radius: 30px;
+  display: none;;
+  padding: 10px;
+}
+
+.work .port-work .logo, .container-responsive .res-logo {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 100px;
+  display: none;
+  font-family: 'Kaushan Script', cursive;
+  height: 100px;
+  justify-content: center;
+  padding: 50px;
+}
+
+.logo p, .container-responsive .res-logo p {
+  -ms-animation: push 3s linear 0s;
+  -webkit-animation: push 3s linear 0s;
+  animation: push 3s linear 0s;
+  font-size: 30px;
+  width: 100px;
+  text-align: center;
+}
+
+.work .port-work .work-link .link-active, .container-responsive .res-link-active {
+  display: inline;
+}
+
+.work .port-work .work-title, .container-responsive .res-title-work {
+  text-align: center;
+}
+
+.work .port-work .work-title div, .container-responsive .res-title-work {
+  display: none;
+}
+
+.work .port-work .work-title h2, .container-responsive .res-title-work h2 {
+  -ms-animation: push 3s linear 0s;
+  -webkit-animation: push 3s linear 0s;
+  animation: push 3s linear 0s;
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+.work .port-work .work-title p, .container-responsive .res-title-work p {
+  -ms-animation: push 3s linear 0s;
+  -webkit-animation: push 3s linear 0s;
+  animation: push 3s linear 0s;
+  font-size: 13px;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+.work .port-work .work-title .title-active, .container-responsive .res-title-active {
+  display: block;
+}
+
+.work .section-load {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.work .section-load div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+}
+
+.toggleNav {
+  transform: translateX(0);
+}
+
+#margin {
+  margin: auto;
+}
+
+#slider {
+  -webkit-appearance: none;
+  height: 1px;
+  width: 200px;
+  border: solid rgba(0,0,0,0.3) 1px;
+  border-bottom: solid rgba(0,0,0,0.5) 1px;
+  border-left: solid rgba(0,0,0,0.5) 1px;
+  -webkit-transform: rotate(90deg);
+ -webkit-transform-origin: top left;
+}
+
+@-moz-keyframes push{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: rotate(0deg) scale(2) skew(0deg) translate(0px); }
+	10% { opacity: 1; -moz-transform: translateX(0px); }
+	25% { opacity: 1; -moz-transform: translateX(0px); }
+
+}
+@-webkit-keyframes push{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform:rotate(0deg) scale(2) skew(0deg) translate(0px);}
+		10% { opacity: 1; -webkit-transform: translateX(0px); }
+	25% { opacity: 1; -webkit-transform: translateX(0px); }
+
+}
+@-ms-keyframes push{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: rotate(0deg) scale(2) skew(0deg) translate(0px); }
+	10% { opacity: 1; -ms-transform: translateX(0px); }
+	25% { opacity: 1; -ms-transform: translateX(0px); }
+}
+
+/*responsive container*/
+
+.container-responsive {
+  display: none;
+}
+
+.container-responsive nav {
+  border-bottom: 1px solid #222;
+  padding-bottom: 5px;
+}
+
+.container-responsive nav img {
+  height: 50px;
+  width: 50px;
+}
+
+.container-responsive .contain-title {
+  height: 200px;
+}
+
+.container-responsive .contain-title h1 {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.container-responsive .contain-title h1 span {
+  display: block;
+  font-size: 30px;
+}
+
+.container-responsive .res-desc div {
+  margin-left: 20px;
+}
+
+.container-responsive .message {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-responsive .res-logo-active {
+  display: flex;
+}
+
+.container-responsive .res-title-active {
+  display: block;
+}
+
+.container-responsive .res-work-link {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.container-responsive .res-section-load {
+  text-align: center;
+}
+
+.container-responsive .res-work {
+  height: 400px;
+}
+
+footer {
+  height: 100%;
+  text-align: center;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .container .left .title .image h1 {
+    margin-right: 0;
+  }
+
+  .container .left .title .image h1 span {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: none;
+  }
+
+  .container-responsive {
+    display: block;
+  }
+}

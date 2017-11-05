@@ -1,0 +1,375 @@
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact .link {
+  margin: 0;
+}
+
+.container {
+  margin: 0 2%;
+}
+
+.current {
+  margin-left: 50px;
+  margin-top: auto;
+}
+
+.display-work {
+  display: flex;
+  flex-direction: column;
+}
+
+.display-work .display-text-img, .display-text-img-responsive {
+  display: flex;
+  height: 600px;
+}
+
+.display-text-img-responsive {
+  display: flex;
+  height: 750px;
+}
+
+.display-text-img-responsive img {
+  height: 600px;
+  width: 100%;
+}
+
+.display-text-img-responsive {
+  display: none;
+}
+
+.display-work .display-text-img .content {
+  background-color: #000;
+  color: #7c6148;
+  width: 50%;
+}
+
+.display-work .display-text-img .content img {
+  height: 100%;
+  width: 100%;
+}
+
+.display-work .display-text-img .content div {
+  margin: 50px
+}
+
+.display-work .display-text-img .content div .title, .display-text-img-responsive .title, .skills .title, .contact .title {
+  border-bottom: 1px solid;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.display-text-img-responsive {
+  background-color: #f3f1f1;
+}
+
+.display-text-img-responsive .title, .skills .title, .contact .title {
+  color: #000;
+  margin-left: 10px;
+  letter-spacing: 2px;
+}
+
+.display-work .display-text-img .content div .link, .display-work .display-text-img .content div p a, .display-text-img-responsive .link a, .skills .link a, .mastery .link a, .contact .link a {
+  color: #7c6148;
+  font-style: italic;
+  font-size: 14px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.display-text-img-responsive .link a {
+  margin-left: 10px;
+}
+
+.flex-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.collage {
+  display: flex;
+  margin-top: 30px;
+}
+
+.left-collage {
+  width: 80%;
+}
+
+.left-collage img {
+  height: 600px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.collage .right-collage .text, .responsive-collage .text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+
+.collage .right-collage p {
+  margin: 0;
+}
+
+.right-collage {
+  align-self: flex-end;
+}
+
+.right-collage img {
+  height: 400px;
+  width: 100%;
+}
+
+.mastery {
+  background-image: url("assets/mastery.png");
+  display: flex;
+  height: 600px;
+}
+
+.mastery div {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  text-align: center;
+  width: 40%;
+}
+
+.mastery div img {
+ border-radius: 30px;
+ margin-top: 30px;
+ width: 85%;
+}
+
+.mastery .passion {
+  border-bottom: 1px solid #000;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+.mastery .mastery-desc {
+  color: #989898;
+  font-size: 14px;
+  margin: 14px 20px;
+}
+
+.mastery .link {
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.nav div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.responsive-collage {
+  display: none;
+}
+
+.responsive-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav nav, .responsive-nav ul {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.nav nav li, .responsive-nav ul li {
+  text-align: center;
+}
+
+.nav img, .nav nav li a, .nav nav li, .responsive-nav li {
+  color: #7c6148;
+  text-decoration: none;
+}
+
+.nav nav img, .responsive-nav img {
+  height: 50px;
+  width: 50px;
+}
+
+.nav nav p, .responsive-nav ul li p {
+  margin: 0;
+}
+
+.nav-click {
+  cursor: pointer;
+}
+
+.nav-click img {
+  height: 25px;
+  width: 25px;
+}
+
+.responsive-nav {
+  display: none;
+  margin-bottom: 10px;
+}
+
+.responsive-nav .special {
+  font-weight: bold;
+}
+
+.responsive-navbar {
+  background-color: #232323;
+  position: absolute;
+  width: 100%;
+}
+
+.show {
+  display: none;
+}
+
+.skills ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 100px 0;
+}
+
+.skills ul li img {
+  height: 100px;
+  width: 100px;
+}
+
+.skills-info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.skills-info .link, .mastery .link {
+  margin-right: 10px;
+}
+
+.skills-info .title {
+  padding: 0;
+}
+
+.responsive-navbar ul .special {
+  border-bottom: 1px solid #7c6148;
+  width: 50%;
+}
+
+.responsive-navbar div {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.responsive-navbar ul {
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    list-style: none;
+}
+
+.responsive-navbar ul li, .responsive-navbar ul li a  {
+  color: #7c6148;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.quote {
+  background-image: url("assets/canyon-bg.jpg");
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+}
+
+.quote .author {
+  align-self: flex-end;
+  margin-right: 10px;
+  margin-top: auto;
+}
+
+.quote .author-quote {
+  margin-left: 10px;
+}
+
+.work {
+  position: relative;
+}
+
+#left, #right {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .collage {
+    display: none;
+  }
+
+  .responsive-collage {
+    display: block;
+  }
+
+  .display-work .display-text-img {
+    display: none;
+  }
+
+  .display-text-img-responsive {
+    display: block;
+  }
+
+  .responsive-nav {
+    display: block;
+  }
+  .responsive-nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mastery div {
+    width: 90%;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width : 1025px) {
+  .responsive-navbar {
+    display: none;
+  }
+}
