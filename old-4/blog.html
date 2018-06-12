@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% include nav.html %}
+
+<div class="posts">
+  {% for post in site.posts %}
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      <article class="post">
+
+        <h1>{{ post.title }}</h1>
+        <p>{{post.date | date: '%Y, %b %d'}}</p>
+      </article>
+    </a>
+  {% endfor %}
+</div>

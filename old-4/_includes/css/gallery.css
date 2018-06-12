@@ -1,0 +1,165 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 0;
+}
+
+main .gallery-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 1200px;
+  width: 100%
+}
+
+main.gallery .gallery-wrapper a {
+  color: #fff;
+  height: 400px;
+  margin: 50px 0 70px 0;
+  max-width: 450px;
+  text-decoration: none;
+  width: 100%;
+}
+
+main.gallery .gallery-wrapper a div {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transform: translateY(90px);
+          transform: translateY(90px);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  position: relative;
+  width: 100%;
+}
+
+main.gallery .gallery-wrapper a div.showPic {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+main.gallery section {
+  background-color: #2b2b2b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: height 0.4s ease,
+              opacity 0.4s ease;
+  transition: height 0.4s ease,
+              opacity 0.4s ease;
+  opacity: 0;
+}
+
+main.gallery .gallery-wrapper div:hover section {
+  height: 100%;
+  opacity: 1;
+}
+
+main.gallery section h2 {
+  position: absolute;
+  bottom: 10%;
+}
+
+
+main aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main.gallery .gallery-wrapper aside p {
+  color: #000;
+  max-width: 80%;
+  text-align: center;
+}
+
+@media screen and (min-width: 961px) {
+  main.gallery .gallery-wrapper aside p {
+    display: none;
+  }
+
+  main div a {
+    width: 45%;
+  }
+
+  main.gallery .gallery-wrapper {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  main.gallery .gallery-wrapper a div {
+    -webkit-transform: perspective(300px) translateY(90px) rotateX(10deg);
+            transform: perspective(300px) translateY(90px) rotateX(10deg);
+  }
+
+  main.gallery .gallery-wrapper a div.showPic {
+    -webkit-transform: perspective(0) translateY(0) rotateX(0);
+            transform: perspective(0) translateY(0) rotateX(0);
+  }
+
+  main.gallery .gallery-wrapper h2 {
+    font-size: 56px;
+  }
+
+  main.gallery .gallery-wrapper a:nth-child(2) {
+    margin-top: 150px;
+  }
+
+  main.gallery .gallery-wrapper a:nth-child(3), main.gallery .gallery-wrapper a:nth-child(5) {
+    -webkit-transform: translate3d(0, -38%, 0);
+            transform: translate3d(0, -38%, 0);
+  }
+
+  main.gallery .gallery-wrapper a div:nth-child(3) {
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 963px) and (max-width: 1200px) {
+  main.gallery .gallery-wrapper a div {
+      -webkit-transform: perspective(250px) translateY(90px) rotateX(2deg);
+              transform: perspective(250px) translateY(90px) rotateX(2deg);
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  main.gallery .gallery-wrapper a {
+    max-width: 313px;
+  }
+}

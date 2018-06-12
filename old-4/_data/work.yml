@@ -1,0 +1,29 @@
+- title: Mario Game made with javascript
+  link: /2017/12/18/mario-game.html
+  img: images/mario-game.png
+  desc: A mario game made with javascript and html5 canvas
+
+- title: restaurant template with a cms
+  link: /2017/12/19/restaurant-template.html
+  img: images/yum.png
+  desc: a restaurant template with a cms
+
+- title: responsive design
+  link: /2017/12/21/nasus-website.html
+  img: images/nasus.png
+  desc: a responsive design website about a league of legends character
+
+- title: Cookie shop with ecommerce
+  link: /2017/12/21/sugar-shop.html
+  img: images/sugar-shop.png
+  desc: a static website with ecommerce
+
+- title: spelling words with chemistry
+  link: /2017/12/25/spelling-with-chemistry.html
+  img: images/spellwithchem.png
+  desc: a website that turns words into chemical elements
+
+- title: browse reddit
+  link: /2017/12/25/reddit-api.html
+  img: images/reddit-api.png
+  desc: browse reddit made using the api

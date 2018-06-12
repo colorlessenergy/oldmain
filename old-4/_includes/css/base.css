@@ -1,0 +1,23 @@
+html, body {
+  background-color: #e6f7dc;
+  color: #2b2b2b;
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.page404 {
+  text-align: center;
+}
+
+.page404 a {
+  color: #131313;
+  text-decoration: none;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+.page404 a:hover {
+  color: #e91e63;
+}

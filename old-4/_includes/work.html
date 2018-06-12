@@ -1,0 +1,16 @@
+<main class="gallery">
+  <div class="gallery-wrapper">
+    {% for work in site.data.work %}
+      <a href="{{ work.link }}">
+        <div style="background-image: url({{ work.img }})">
+          <section class="overlay">
+            <h2>{{ work.title }}</h2>
+          </section>
+        </div>
+        <aside>
+          <p>{{ work.desc }}</p>
+        </aside>
+      </a>
+    {% endfor %}
+  </div>
+</main>
